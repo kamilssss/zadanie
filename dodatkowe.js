@@ -150,7 +150,6 @@ const main = async () => {
     let textHtml = await generateHtml(artiContent);
     console.log("HTML artykułu został wygenerowany.");
 
-    // Zamień placeholdery na rzeczywiste obrazy z odpowiednimi promptami
     textHtml = await replacePlaceholdersWithImages(textHtml, articleTopic);
     console.log("Placeholdery obrazów zostały zamienione na wygenerowane obrazy.");
 
